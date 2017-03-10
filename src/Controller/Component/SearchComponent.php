@@ -193,6 +193,9 @@ class SearchComponent extends Component
         if ($options['operator'] === 'LIKE') {
             $string .= ' LIKE';
         }
+        if ($options['operator'] === '>') {
+          $string .= ' >';
+        }
         return $string;
     }
 
