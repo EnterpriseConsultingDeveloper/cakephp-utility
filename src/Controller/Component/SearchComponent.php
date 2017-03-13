@@ -196,6 +196,9 @@ class SearchComponent extends Component
         if ($options['operator'] === '>') {
           $string .= ' >';
         }
+        if ($options['operator'] === '>=') {
+          $string .= ' >=';
+        }
         return $string;
     }
 
